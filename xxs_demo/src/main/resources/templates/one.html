@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>测试反射性XSS</title>
+</head>
+<body>
+
+<h1>反射型XSS:</h1>
+<form action="http://localhost:8080/search" method="get">
+    <input type="text" name="keyword" th:value="${keyword}">
+    <button type="submit">搜索</button>
+</form>
+<div th:if="${keyword}!=null and ${keyword} !=''">
+    您搜索的关键词是:<p th:utext="${keyword}"></p>
+    <!--<a href="http://xxx/?redirect_to=javascript:alert('XSS')">点击</a>-->
+    <!--<script>alert('XSS');</script>-->
+    <p>展示商品.......</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>存储型XSS</title>
+</head>
+<body>
+<h1>存储型XSS:</h1>
+<h3>您是怎么认为世界末日的呢？</h3>
+<form action="http://localhost:8080/two/add" method="get">
+    内容：<input type="text" name="value">
+    <button type="submit">发布评论</button>
+</form>
+<h5>评论:</h5>
+<ul>
+    <li th:each="item:${lists}">
+        <p th:utext="${item}"></p>
+    </li>
+</ul>
+</body>
+</html>

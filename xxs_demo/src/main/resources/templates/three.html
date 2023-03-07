@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM型XSS</title>
+</head>
+<style>
+
+</style>
+<body>
+<h1>DOM型XSS</h1>
+<div class="search">
+    <input type="text" placeholder="请输入..." name="" id="tx" value="" />
+    <button onclick="chooseBtn()"><i>搜索</i></button>
+</div>
+
+<div>
+    <ul id="search">
+    </ul>
+</div>
+
+<script>
+    function chooseBtn(){
+        var value = document.getElementById("tx").value;
+        var html="<li><b>"+value+"</b></li>"
+        $(".search").append(html);
+    }
+</script>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</body>
+</html>

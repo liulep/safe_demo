@@ -1,0 +1,17 @@
+spring:
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    encoding: utf-8
+    suffix: .html
+    mode: HTML
+  mvc:
+    static-path-pattern: /static/**
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mysql.yueue.top:3306/user
+    username: root
+    password: root_001
+
+server:
+  port: 8888
