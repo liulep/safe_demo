@@ -12,6 +12,8 @@
         <module>xxs_demo</module>
         <module>csrf_demo</module>
         <module>mysql_demo</module>
+        <module>starter</module>
+        <module>common</module>
     </modules>
 
     <properties>

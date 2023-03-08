@@ -9,6 +9,8 @@
         <module name="xxs_demo" />
         <module name="csrf_demo" />
         <module name="mysql_demo" />
+        <module name="starter" />
+        <module name="common" />
       </profile>
     </annotationProcessing>
   </component>
