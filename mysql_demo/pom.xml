@@ -40,25 +40,25 @@
             <version>3.5.2</version>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>com.example</groupId>-->
-<!--            <artifactId>message-client</artifactId>-->
-<!--            <version>0.0.1-SNAPSHOT</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.yue</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
-    <repositories>
-        <repository>
-            <id>maven_repository</id>
-            <url>https://raw.githubusercontent.com/liulep/maven_repository/main/yue/</url>
-        </repository>
-    </repositories>
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>maven_repository</id>-->
+<!--            <url>https://raw.githubusercontent.com/liulep/maven_repository/main/yue/</url>-->
+<!--        </repository>-->
+<!--    </repositories>-->
 
-    <distributionManagement>
-        <repository>
-            <id>yue</id>
-            <url>file:${basedir}/yue</url>
-        </repository>
-    </distributionManagement>
+<!--    <distributionManagement>-->
+<!--        <repository>-->
+<!--            <id>yue</id>-->
+<!--            <url>file:${basedir}/yue</url>-->
+<!--        </repository>-->
+<!--    </distributionManagement>-->
 
 </project>
